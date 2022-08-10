@@ -1,85 +1,11 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import Utils.Utils.*;
+
+import static Utils.Utils.*;
 
 public class OneDimensionalArraysCreation {
-
-    private static int getCount(int start, int end, int step) {
-        int count = 0;
-
-        if (count >= 0) {
-            for (int i = start; i < end; i += step) {
-                count++;
-            }
-        } else {
-            count = 0;
-        }
-
-        return count;
-    }
-
-    private static int getCountOfOddNums(int start, int end, int step) {
-        int count = 0;
-
-        if (count >= 0) {
-            for (int i = start; i < end; i += step) {
-                if (i % 2 != 0){
-                    count++;
-                }
-            }
-        }
-        else {
-            count = 0;
-        }
-
-        return count;
-    }
-
-    private static void printArray(int[] arr) {
-        System.out.println(Arrays.toString(arr));
-    }
-
-    private static void printList(List<Integer> list) {
-
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + "  ");
-        }
-        System.out.println();
-    }
-
-    private static int getRandomNumber(int end, int start) {
-
-        return (int) (Math.random() * end + start);
-    }
-
-    private static int getAverage(int[] arr) {
-        double average = 0.0;
-        int sum = 0;
-
-        if (arr.length != 0) {
-            for (int i = 0; i < arr.length; i++) {
-                sum += arr[i];
-                average = Math.round(sum / arr.length);
-            }
-        }
-        return (int)average;
-    }
-
-    private static void printThis(int a) {
-        System.out.println(a);
-    }
-
-    private static int getMin(int[] arr) {
-        Arrays.sort(arr);
-
-        return  arr[0];
-    }
-
-    private static int getMax(int[] arr) {
-        Arrays.sort(arr);
-
-        return arr[arr.length - 1];
-    }
 
     public static void main (String[] args) {
 
