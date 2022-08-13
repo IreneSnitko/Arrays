@@ -6,7 +6,7 @@
 
 `MultiDimensionalArrays`------------->creation 2D-arrays and simple actions with them
 
-`MethodsForArraysActions`------------>creation the different methods for array actions:
+>`MethodsForArraysActions`------------>creation the different methods for array actions:
     
    >>creation an array with the selected parameters
     
