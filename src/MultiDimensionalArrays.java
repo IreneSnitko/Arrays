@@ -15,7 +15,7 @@ public class MultiDimensionalArrays {
 
         for (int i = 0; i < twoDimArray.length; i++) {
             for (int j = 0; j < twoDimArray[i].length; j++) {
-                twoDimArray[i][j] = getRandomNumber(999, 100);
+                twoDimArray[i][j] = getRandomNumberInInterval(999, 100);
             }
         }
 
