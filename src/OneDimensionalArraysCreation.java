@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import Utils.Utils.*;
 
 import static Utils.Utils.*;
 
@@ -15,7 +14,7 @@ public class OneDimensionalArraysCreation {
         the values of which are not more than 10
         */
 
-        int[] evenNumbers = new int[getCount(0, 11, 2)];
+        int[] evenNumbers = new int[getArrayLengthWithConditions(0, 11, 2)];
 
         for (int i = 0, j = 0; i < 11; i++) {
 
@@ -34,7 +33,7 @@ public class OneDimensionalArraysCreation {
         transform this array to list
         */
 
-        int[] oddNumbers = new int[getCount(1, 16, 2)];
+        int[] oddNumbers = new int[getArrayLengthWithConditions(1, 16, 2)];
         int val = 1;
 
         for (int i = 0; i < oddNumbers.length; i++) {
@@ -85,10 +84,10 @@ public class OneDimensionalArraysCreation {
         find the average value
         */
 
-        int[] randomNums = new int[getCount(5, 20, 1)];
+        int[] randomNums = new int[getArrayLengthWithConditions(5, 20, 1)];
 
         for (int i = 0; i < randomNums.length; i++) {
-            randomNums[i] = getRandomNumber(20, 5);
+            randomNums[i] = getRandomNumberInInterval(20, 5);
         }
 
         printArray(randomNums);
@@ -100,7 +99,7 @@ public class OneDimensionalArraysCreation {
         in between (-1000, -900)
         */
 
-        int[] array = new int[getCountOfOddNums(-1000, -900, 1)];
+        int[] array = new int[getArrayLengthOfOddNums(-1000, -900, 1)];
 
         for (int i = 0, j = -1000; j < -900; j++) {
             if (j % 2 != 0) {
@@ -124,7 +123,7 @@ public class OneDimensionalArraysCreation {
         List<Integer> randomList = new ArrayList<>();
 
         for (int i = 0; i < 15; i++) {
-            randomList.add(getRandomNumber(10000, 0));
+            randomList.add(getRandomNumberInInterval(10000, 0));
         }
 
         printList(randomList);
