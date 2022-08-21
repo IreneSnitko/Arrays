@@ -1,4 +1,4 @@
-import static Utils.Utils.*;
+import static utils.Utils.*;
 
 public class MultiDimensionalArrays {
 
