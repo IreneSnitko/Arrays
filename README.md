@@ -2,6 +2,8 @@
 ***
 #### Arrays | tasks Solution ####
 
+`ArraysAlgorithms`------------------->various algorithms for analyzing array values
+
 `OneDimensionalArraysCreation`------->creation one-dimensional arrays and simple actions with them
 
 `MultiDimensionalArrays`------------->creation 2D-arrays and simple actions with them
@@ -21,4 +23,3 @@
        > creation a new array with the results of multiplication by a given number
        
        > creation a new array of differences between tens and ones of numbers of the original array
-    
