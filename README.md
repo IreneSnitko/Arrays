@@ -1,6 +1,6 @@
 ### Arrays ###
 ***
-#### Arrays | tasks Solution ####
+#### Arrays | tasks Solutions ####
 
 `ArraysAlgorithms`------------------->various algorithms for actions with array elements
 
