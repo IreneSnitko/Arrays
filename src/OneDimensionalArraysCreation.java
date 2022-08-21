@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static Utils.Utils.*;
+import static utils.Utils.*;
 
 public class OneDimensionalArraysCreation {
 

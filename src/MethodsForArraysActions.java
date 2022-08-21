@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-import static Utils.Utils.*;
+import static utils.Utils.*;
 
 public class MethodsForArraysActions {
 
@@ -19,8 +19,7 @@ public class MethodsForArraysActions {
             }
 
             return arr;
-        }
-        else {
+        } else {
 
             return new int[]{};
         }
@@ -42,8 +41,7 @@ public class MethodsForArraysActions {
             }
 
             return arr;
-        }
-        else {
+        } else {
 
             return new double[]{};
         }
@@ -381,8 +379,7 @@ public class MethodsForArraysActions {
             }
 
             return arr;
-        }
-        else {
+        } else {
 
             return new int[]{};
         }
@@ -730,4 +727,3 @@ public class MethodsForArraysActions {
                 );
     }
 }
-
