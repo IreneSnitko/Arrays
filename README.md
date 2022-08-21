@@ -2,7 +2,7 @@
 ***
 #### Arrays | tasks Solution ####
 
-`ArraysAlgorithms`------------------->various algorithms for analyzing array values
+`ArraysAlgorithms`------------------->various algorithms for actions with array elements
 
 `OneDimensionalArraysCreation`------->creation one-dimensional arrays and simple actions with them
 
