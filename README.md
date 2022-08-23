@@ -44,7 +44,7 @@
 
 > `RealizationArraysAlgorithms`--------> running the code in the console
 
-       [1, 3, 5, 7, 9]
+       - Task 1: [1, 3, 5, 7, 9]
        []
        1844
        -10
