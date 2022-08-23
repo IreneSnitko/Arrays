@@ -4,7 +4,7 @@
 
 > `ArraysAlgorithms`-----> various algorithms for actions with array elements | Methods in this Class accept an array and return:
 
-       - the array of odd index values
+                                                 - the array of odd index values
        
        - the sum of all the array numbers
        
