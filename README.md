@@ -2,7 +2,7 @@
 ***
 ### Arrays | tasks Solutions ###
 
-> `ArraysAlgorithms`-------------------->various algorithms for actions with array elements
+> `ArraysAlgorithms`--------------------> various algorithms for actions with array elements
 
 ###### Methods in this Class accept an array and return: ######
 
@@ -22,7 +22,7 @@
        
        - the array in which all negative numbers are in the second half of the array 
 
-> `MethodsForArraysActions`------------>creation the different methods for array actions
+> `MethodsForArraysActions`------------> creation the different methods for array actions
     
 ###### Methods in this Class: ######
    
@@ -38,8 +38,25 @@
        
        - create a new array of differences between tens and ones of numbers of the original array       
 
-> `MultiDimensionalArrays`------------->creation 2D-arrays and simple actions with them
+> `MultiDimensionalArrays`-------------> creation 2D-arrays and simple actions with them
 
-> `OneDimensionalArraysCreation`------->creation one-dimensional arrays and simple actions with them
+> `OneDimensionalArraysCreation`-------> creation one-dimensional arrays and simple actions with them
+
+> `RealizationArraysAlgorithms`--------> running the code in the console
+
+       [1, 3, 5, 7, 9]
+       []
+       1844
+       -10
+       [3, 6, 4]
+       [3, 7, 23]
+       []
+       [33, 54, 74]
+       []
+       []
+       [6, 5, 4, 3, 2, 1, 0]
+       [11, 22, 33, 44, 55, 66, 77, 88, 99]
+       [-33, -7, 1, 6, 19, 22, 55, 112, 120]
+       [4, 7, 5, 9, 4, 12, -2, -12, -3]
 
 
