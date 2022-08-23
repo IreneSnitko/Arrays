@@ -6,21 +6,21 @@
 
 ###### Methods in this Class accept an array and return: ######
 
-       >> the array of odd index values
+       ######## the array of odd index values
        
-       >> the sum of all the array numbers
+       the sum of all the array numbers
        
-       >> the array, containing minimum & maximum & average values between these indices
+       the array, containing minimum & maximum & average values between these indices
        
-       >> the array with the values of peak elements
+       the array with the values of peak elements
        
-       >> the array of common elements
+       the array of common elements
        
-       >> the "reverse" array
+       the "reverse" array
        
-       >> sorted array with elements in ascending order
+       sorted array with elements in ascending order
        
-       >> the array in which all negative numbers are in the second half of the array
+       the array in which all negative numbers are in the second half of the array ########
 
 > `MethodsForArraysActions`------------>creation the different methods for array actions
     
