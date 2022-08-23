@@ -10,7 +10,7 @@ public class MethodsForArraysActions {
     from the positive or negative integers
     */
 
-    private static int[] getArrayFromRandomNumbers(int length, int upNum, int lowNum) {
+    public static int[] getArrayFromRandomNumbers(int length, int upNum, int lowNum) {
         int[] arr = new int[length];
 
         if(length > 0) {
@@ -32,7 +32,7 @@ public class MethodsForArraysActions {
     Method overloading
     */
 
-    private static double[] getArrayFromRandomNumbers(int length, double upNum, double lowNum) {
+    public static double[] getArrayFromRandomNumbers(int length, double upNum, double lowNum) {
         double[] arr = new double[length];
 
         if(length > 0) {
@@ -54,7 +54,7 @@ public class MethodsForArraysActions {
     from the same words
     */
 
-    private static String[] getArrayFromString(String s1, String s2, String s3, String s4, String s5) {
+    public static String[] getArrayFromString(String s1, String s2, String s3, String s4, String s5) {
         String[] arr = new String[]{};
 
         if (s1 != null && s2 != null && s3 != null && s4 != null && s5 != null && arr.length != 0) {
@@ -74,7 +74,7 @@ public class MethodsForArraysActions {
     the same numbers, multiplied by set double
     */
 
-    private static double[] getArrayMultipliedNumbers(int[] arr, double multiplier) {
+    public static double[] getArrayMultipliedNumbers(int[] arr, double multiplier) {
         double[] arrD = new double[arr.length];
 
         for (int i = 0; i < arr.length; i++) {
@@ -96,7 +96,7 @@ public class MethodsForArraysActions {
     even and odd numbers in this array
     */
 
-    private static int countEvenNumbers(int[] arr) {
+    public static int countEvenNumbers(int[] arr) {
         if(!containsNegativeNumbers(arr) && arr.length != 0) {
             int counter = 0;
 
@@ -111,7 +111,7 @@ public class MethodsForArraysActions {
         return Integer.MIN_VALUE;
     }
 
-    private static int countOddNumbers(int[] arr) {
+    public static int countOddNumbers(int[] arr) {
         if(!containsNegativeNumbers(arr) && arr.length != 0) {
             int counter = 0;
 
@@ -133,7 +133,7 @@ public class MethodsForArraysActions {
     the array odd numbers
     */
 
-    private static int[] getArrayOddNumbers(int[] arr) {
+    public static int[] getArrayOddNumbers(int[] arr) {
         int lengthOdd = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -162,7 +162,7 @@ public class MethodsForArraysActions {
     the array even numbers
     */
 
-    private static int[] getArrayEvenNumbers(int[] arr) {
+    public static int[] getArrayEvenNumbers(int[] arr) {
         int lengthEven = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -191,7 +191,7 @@ public class MethodsForArraysActions {
     if the numbers are greater than condition number
     */
 
-    private static boolean[] getBooleanArray(int[] arr, int condition) {
+    public static boolean[] getBooleanArray(int[] arr, int condition) {
         int newLength = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -223,7 +223,7 @@ public class MethodsForArraysActions {
     the string of these words
     */
 
-    private static String getLineFromWords(String[] arr) {
+    public static String getLineFromWords(String[] arr) {
         String wordsLine = "";
 
         if (arr.length != 0) {
@@ -242,7 +242,7 @@ public class MethodsForArraysActions {
     in the second half of the array
     */
 
-    private static int countSumHalfArray(int[] arr) {
+    public static int countSumHalfArray(int[] arr) {
         int newLength = 0;
         int sum = 0;
 
@@ -273,7 +273,7 @@ public class MethodsForArraysActions {
     method(2) ->{0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20}
     */
 
-    private static int[] getMultiplicationTableOnNumber(int x) {
+    public static int[] getMultiplicationTableOnNumber(int x) {
         int length = 0;
         String error = "You entered a number not from the interval (1, 10)";
 
@@ -310,7 +310,7 @@ public class MethodsForArraysActions {
     if there are more odd numbers
     */
 
-    private static int[] getArrayOfEvenOrOddNumbers(int[] arr) {
+    public static int[] getArrayOfEvenOrOddNumbers(int[] arr) {
         final String EVEN_MORE = "Even numbers more";
         final String ODD_MORE = "Odd numbers more";
         final String EQUAlS_OR_ZEROS = "Even equals odd or array values are zeros";
@@ -370,7 +370,7 @@ public class MethodsForArraysActions {
     array of random positive numbers [0, 10]
     */
 
-    private static int[] getArrayWithLength(int length) {
+    public static int[] getArrayWithLength(int length) {
         int[] arr = new int[getLength(length)];
 
         if (length != 0) {
@@ -394,7 +394,7 @@ public class MethodsForArraysActions {
     of this length and all numbers have this quantity of characters
     */
 
-    private static int[] getArrayWithNumberDigits(int length, int digit) {
+    public static int[] getArrayWithNumberDigits(int length, int digit) {
         final String ERROR = "Error, you entered zero";
         final String NOT_POSSIBLE = "It's not possible to exceed the type Integer range";
         final String NEGATIVE = "You have entered a negative number of digits";
@@ -481,7 +481,7 @@ public class MethodsForArraysActions {
     only two-digit numbers
     */
 
-    private static int getLengthForArrayNeedDigitPositiveNumbers(int[] arr, int low, int high) {
+    public static int getLengthForArrayNeedDigitPositiveNumbers(int[] arr, int low, int high) {
         int lengthNew = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -493,7 +493,7 @@ public class MethodsForArraysActions {
         return lengthNew;
     }
 
-    private static int[] getArrayTwoDigitsNumber(int[] arr) {
+    public static int[] getArrayTwoDigitsNumber(int[] arr) {
         int[] arrNew = new int[getLengthForArrayNeedDigitPositiveNumbers(arr, 9, 100)];
         int index = 0;
 
@@ -519,7 +519,7 @@ public class MethodsForArraysActions {
     between tens and ones
     */
 
-    private static int[] getArrayOfDifferences(int[] arr) {
+    public static int[] getArrayOfDifferences(int[] arr) {
         int[] newArr = new int[getLengthForArrayNeedDigitPositiveNumbers(arr, 9, 100)];
         int index = 0;
 
@@ -535,195 +535,5 @@ public class MethodsForArraysActions {
         }
 
         return newArr;
-    }
-
-    public static void main (String[]args){
-
-        // ~Task 1~
-
-        printArray(
-                getArrayFromRandomNumbers(getLength(5), 10, 100)
-                );
-
-        printArray(
-                getArrayFromRandomNumbers(getLength(-5), 10, 100)
-                );
-
-
-        // ~Task 2~
-
-        printArray(
-                getArrayFromRandomNumbers(getLength(6), 11.98, 2.12)
-                );
-
-        printArray(
-                getArrayFromRandomNumbers(getLength(-6), 11.98, 2.12)
-                );
-
-        // ~Task 3~
-
-        printArray(
-                getArrayFromString("One", "Two", "Three", "Four", "Five")
-                );
-
-        // ~Task 4~
-
-        printArray(
-                getArrayMultipliedNumbers(
-                getArrayFromRandomNumbers(getLength(8), 999, 1),
-                2.5)
-                );
-
-        printArray(
-                getArrayMultipliedNumbers(
-                getArrayFromRandomNumbers(getLength(-8), 999, 1),
-                2.5)
-                );
-
-        // ~Task 5~
-
-        int[] arr = getArrayFromRandomNumbers(getLength(10), 99, 0);
-        printArray(arr);
-
-        printThis(countEvenNumbers(arr));
-
-        printThis(countOddNumbers(arr));
-
-        // ~Task 6.1~
-
-        printArray(
-                getArrayOddNumbers(
-                getArrayFromRandomNumbers(getLength(5), 9999, 0))
-                );
-
-        // ~Task 6.2~
-
-        printArray(
-                getArrayEvenNumbers(
-                getArrayFromRandomNumbers(getLength(5), 9999, 0))
-                );
-
-        // ~Task 7~
-
-        printArray(
-                getBooleanArray(
-                getArrayFromRandomNumbers(10, 100, -10), 10)
-                );
-
-        // ~Task 8~
-
-        printThis(
-                getLineFromWords(new String[]{"Richard", "Of", "York", "Gave", "Battle", "In", "Vain"})
-                );
-
-        // ~Task 9~
-
-        printThis(
-                countSumHalfArray(
-                getArrayFromRandomNumbers(12, 50, -50))
-                );
-
-        // ~Task 10~
-
-        printArray(getMultiplicationTableOnNumber(1));
-
-        printArray(getMultiplicationTableOnNumber(10));
-
-        printArray(getMultiplicationTableOnNumber(11));
-
-        printArray(getMultiplicationTableOnNumber(0));
-
-        printArray(getMultiplicationTableOnNumber(-1));
-
-        // ~Task 11~
-
-        printArray(
-                getArrayOfEvenOrOddNumbers(
-                getArrayFromRandomNumbers(5, -100, 0))
-                );
-
-        printArray(
-                getArrayOfEvenOrOddNumbers(
-                getArrayFromRandomNumbers(5, 100, 0))
-                );
-
-        // ~Task 12~
-
-        printArray(getArrayWithLength(15));
-
-        printArray(getArrayWithLength(0));
-
-        printArray(getArrayWithLength(-7));
-
-        // ~Task 13~
-
-        printArray(getArrayWithNumberDigits(5, 1));
-
-        printArray(getArrayWithNumberDigits(5, 2));
-
-        printArray(getArrayWithNumberDigits(5, 3));
-
-        printArray(getArrayWithNumberDigits(5, 4));
-
-        printArray(getArrayWithNumberDigits(5, 5));
-
-        printArray(getArrayWithNumberDigits(5, 6));
-
-        printArray(getArrayWithNumberDigits(5, 7));
-
-        printArray(getArrayWithNumberDigits(5, 8));
-
-        printArray(getArrayWithNumberDigits(5, 9));
-
-        printArray(getArrayWithNumberDigits(5, 10));
-
-        printArray(getArrayWithNumberDigits(5, 11));
-
-        printArray(getArrayWithNumberDigits(5, -1));
-
-        printArray(getArrayWithNumberDigits(-5, 11));
-
-        printArray(getArrayWithNumberDigits(-5, -1));
-
-        printArray(getArrayWithNumberDigits(0, 0));
-
-        // ~Task 14~
-
-        printArray(
-                getArrayTwoDigitsNumber(
-                getArrayFromRandomNumbers(getLength(10), 0, 150))
-                );
-
-        printArray(
-                getArrayTwoDigitsNumber(
-                getArrayFromRandomNumbers(getLength(-10), 0, 150))
-                );
-
-        printArray(
-                getArrayTwoDigitsNumber(
-                getArrayFromRandomNumbers(getLength(-10), 0, -100))
-                );
-
-        printArray(
-                getArrayTwoDigitsNumber(
-                getArrayFromRandomNumbers(getLength(0), 0, -100))
-                );
-
-        // ~Task 15~
-
-        printArray(
-                getArrayOfDifferences(
-                getArrayFromRandomNumbers(getLength(5), 99, 10))
-                );
-
-        printArray(
-                getArrayOfDifferences(
-                getArrayFromRandomNumbers(getLength(-5), 99, 10))
-                );
-
-        printArray(
-                getArrayOfDifferences(
-                getArrayFromRandomNumbers(getLength(5), 101, 100))
-                );
     }
 }

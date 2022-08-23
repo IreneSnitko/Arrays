@@ -1,5 +1,3 @@
-import static utils.Utils.*;
-
 public class ArraysAlgorithms {
 
     /*
@@ -9,7 +7,7 @@ public class ArraysAlgorithms {
     an array of odd index values
     */
 
-    private static int[] getOddIndices(int[] arr) {
+    public static int[] getOddIndices(int[] arr) {
         int index = 0;
 
         if (arr.length != 0) {
@@ -37,7 +35,7 @@ public class ArraysAlgorithms {
     the sum of all the array numbers
     */
 
-    private static int getSumArray(int[] arr) {
+    public static int getSumArray(int[] arr) {
         int sum = 0;
 
         if (arr.length != 0) {
@@ -60,7 +58,7 @@ public class ArraysAlgorithms {
     between these indices
     */
 
-    private static int[] getMinMaxAve(int[] arr, int start, int end) {
+    public static int[] getMinMaxAve(int[] arr, int start, int end) {
 
         if (arr.length == 0
                 || start < 0
@@ -90,32 +88,191 @@ public class ArraysAlgorithms {
             return minMaxAve;
     }
 
-    public static void main(String[] args) {
+    /*
+    ~Task 4~
+    Write an algorithm accepting
+    an array of integers and returns
+    the array with the values of peak elements
+    (elements that are larger than their neighbors)
+    */
 
-//  ~Task 1~ odd indices
+    public static int[] getPeakElementsArray (int[] arr) {
+        int newLength = 0;
 
-        printArray(
-                getOddIndices(
-                new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}));  // [1, 3, 5, 7, 9]
+        for (int i = 0; i < arr.length; i++) {
+            if (i == 0 && arr[0] > arr[1]) {
 
-        printArray(
-                getOddIndices(
-                new int[]{}));  // Out: []
+                newLength++;
+            }
+            else if (i > 0
+                    && i < arr.length - 1
+                    && arr[i] > arr[i - 1]
+                    && arr[i] > arr[i + 1]) {
 
-//  ~Task 2~ sum array
+                newLength++;
+            }
+            else if (arr[arr.length - 1] > arr[arr.length - 2]) {
 
-        printThis(
-                getSumArray(
-                new int[]{-45, 590, 234, 985, 12, 68}));    // 1844
+                newLength++;
+            }
+        }
 
-        printThis(
-                getSumArray(
-                new int[]{-7, -3}));    //10
+        int[] newArr = new int[newLength];
+        int index = 0;
 
-//  ~Task 3~ min & max & ave
+        if (arr.length != 0) {
+            for (int i = 0; i < arr.length; i++) {
+                if (i == 0 && arr[0] > arr[1]) {
+                    newArr[index] = arr[0];
+                    index++;
+                }
+                else if (i > 0
+                        && i < arr.length - 1
+                        && arr[i] > arr[i - 1]
+                        && arr[i] > arr[i + 1]) {
+                    newArr[index] = arr[i];
+                    index++;
+                }
+                else if (arr[arr.length - 1] > arr[arr.length - 2]) {
+                    newArr[index] = arr[arr.length - 1];
+                    index++;
+                }
+            }
+        } else {
 
-        printArray(
-                getMinMaxAve(
-                new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, 3, 6));    // [3, 6, 4]
+            return new int[]{};
+        }
+
+        return newArr;
+    }
+
+    /*
+    ~Task 5~
+    Write an algorithm accepting
+    two array of integers and returns
+    an array of common elements
+    */
+
+    public static int[] getArrayIntersection(int[] arr1, int[] arr2) {
+
+        if (arr1.length == 0 || arr2.length == 0) {
+
+            return new int[]{};
+        }
+
+        int l = 0;
+
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr2.length; j++) {
+
+                if (arr1[i] == arr2[j]) {
+                    l++;
+                }
+            }
+        }
+
+        int[] newArr = new int[l];
+        int index = 0;
+
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr2.length; j++) {
+
+                if (arr1[i] == arr2[j]) {
+                    newArr[index] = arr1[i];
+                    index++;
+                }
+            }
+        }
+
+        return newArr;
+    }
+
+    /*
+    ~Task 6~
+    Write an algorithm accepting
+    an array of integers and returns
+    the "reverse" array
+    */
+
+    public static int[] getReverseArray(int[] arr) {
+        int tempo = 0;
+
+        for (int i = 0; i < arr.length / 2; i++) {
+
+            tempo = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = arr[i];
+            arr[i] = tempo;
+        }
+
+        return arr;
+    }
+
+    public static int[] getReverseArrayWitCounterDecreasing(int[] arr) {
+
+        int[] reverse = new int[arr.length];
+        int index = arr.length -1;
+
+        for (int i = 0; i < arr.length; i++) {
+            reverse[index] = arr[i];
+            index--;
+        }
+
+        return reverse;
+    }
+
+    /*
+    ~Task 7~
+    Write an algorithm accepting
+    an array of integers and sorts
+    the array elements in ascending order
+    */
+
+    public static int[] getSortedArray(int[] arr) {
+        if (arr.length == 0) {
+
+            return new int[]{};
+        }
+
+        int tempo = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+
+                if (arr[i] > arr[j]) {
+                    tempo = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tempo;
+                }
+            }
+        }
+
+        return arr;
+    }
+
+    /*
+    ~Task 8~
+    Write an algorithm accepting
+    an array of integers and returns
+    the array in which all negative numbers
+    are in the second half of the array
+    */
+
+    public static int[] getNegativeOnTheRight(int[] arr) {
+
+        int[] newArr = new int[arr.length];
+        int index1 = arr.length - 1;
+        int index2 = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                newArr[index1] = arr[i];
+                index1--;
+            } else {
+                newArr[index2] = arr[i];
+                index2++;
+            }
+        }
+
+        return  newArr;
     }
 }
