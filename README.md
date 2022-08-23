@@ -20,8 +20,9 @@
        
        - sorted array with elements in ascending order
        
-       - the array in which all negative numbers are in the second half of the array ########       
-       **
+       - the array in which all negative numbers are in the second half of the array ########
+       
+       ****
 
 > `MethodsForArraysActions`------------>creation the different methods for array actions
     
@@ -39,9 +40,9 @@
        
        - create a new array of differences between tens and ones of numbers of the original array
        
-**
+****
 > `MultiDimensionalArrays`------------->creation 2D-arrays and simple actions with them
-**
+****
 > `OneDimensionalArraysCreation`------->creation one-dimensional arrays and simple actions with them
 
 
