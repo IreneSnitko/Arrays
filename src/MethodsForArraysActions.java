@@ -55,9 +55,9 @@ public class MethodsForArraysActions {
     */
 
     public static String[] getArrayFromString(String s1, String s2, String s3, String s4, String s5) {
-        String[] arr = new String[]{};
+        String[] arr;
 
-        if (s1 != null && s2 != null && s3 != null && s4 != null && s5 != null && arr.length != 0) {
+        if (s1 != null && s2 != null && s3 != null && s4 != null && s5 != null) {
             arr = new String[]{s1, s2, s3, s4, s5};
         }
         else {
@@ -535,5 +535,10 @@ public class MethodsForArraysActions {
         }
 
         return newArr;
+    }
+
+    public static void main(String[] args) {
+        printArray(
+                getArrayFromString("One", "Two", "Three", "Four", "Five"));
     }
 }

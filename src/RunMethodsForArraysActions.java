@@ -1,6 +1,6 @@
 import static utils.Utils.*;
 
-public class RealizationMethodsForArraysActions extends MethodsForArraysActions {
+public class RunMethodsForArraysActions extends MethodsForArraysActions {
 
     public static void main (String[]args){
 
