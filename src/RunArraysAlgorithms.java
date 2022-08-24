@@ -1,6 +1,6 @@
 import static utils.Utils.*;
 
-public class RealizationArraysAlgorithms extends ArraysAlgorithms {
+public class RunArraysAlgorithms extends ArraysAlgorithms {
 
     public static void main(String[] args) {
 
