@@ -67,13 +67,4 @@
               - Task 8: [4, 7, 5, 9, 4, 12, -2, -12, -3]
 ***
 
-> `RunMethodsForArraysActions`-----> running the code in the console | The results:
-
-              - Task 1: [100, 41, 55, 98, 98]
-                        [85, 92, 57, 75, 63]
-                 
-              - Task 2: [4.223670174362202, 2.5528505274595026, 12.093682007848837, 8.022980566709112, 3.4718878784214446, 5.390653695633905]
-                        [4.223670174362202, 2.5528505274595026, 12.093682007848837, 8.022980566709112, 3.4718878784214446, 5.390653695633905]
-                        
-              - Task 3: [One, Two, Three, Four, Five]
-                        
+> `RunMethodsForArraysActions`-----> running the code in the console | The results are random numbers because the methods generate random array values              
