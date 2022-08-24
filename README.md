@@ -36,7 +36,11 @@
 
 > `MultiDimensionalArrays`----------> creation 2D-arrays and simple actions with them
 
+***
+
 > `OneDimensionalArraysCreation`----> creation one-dimensional arrays and simple actions with them
+
+***
 
 > `RunArraysAlgorithms`-----> running the code in the console | The results:
 
