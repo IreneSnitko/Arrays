@@ -1,6 +1,6 @@
 ## Arrays | tasks Solutions ##
 ***
-> `ArraysAlgorithms`-----> various algorithms for actions with array elements | Methods in this Class accept an array and return:
+> `ArraysAlgorithms`---> various algorithms for actions with array elements | Methods in this Class accept an array and return:
 
               - the array of odd index values
        
@@ -19,7 +19,7 @@
               - the array in which all negative numbers are in the second half of the array
               
 ***
-> `MethodsForArraysActions`-----> creation the different methods for array actions | Methods in this Class return:   
+> `MethodsForArraysActions`---> creation the different methods for array actions | Methods in this Class return:   
    
               - an array with the selected parameters of different data types
     
@@ -34,15 +34,15 @@
               - a new array of differences between tens and ones of numbers of the original array
 ***
 
-> `MultiDimensionalArrays`----------> creation 2D-arrays and simple actions with them
+> `MultiDimensionalArrays`---> creation 2D-arrays and simple actions with them
 
 ***
 
-> `OneDimensionalArraysCreation`----> creation one-dimensional arrays and simple actions with them
+> `OneDimensionalArraysCreation`---> creation one-dimensional arrays and simple actions with them
 
 ***
 
-> `RunArraysAlgorithms`-----> running the code in the console | The results:
+> `RunArraysAlgorithms`---> running the code in the console | The results:
 
               - Task 1: [1, 3, 5, 7, 9]
                         []
@@ -67,4 +67,4 @@
               - Task 8: [4, 7, 5, 9, 4, 12, -2, -12, -3]
 ***
 
-> `RunMethodsForArraysActions`-----> running the code in the console | The results are random numbers because the methods generate random array values              
+> `RunMethodsForArraysActions`---> running the code in the console | The results are random numbers because the methods generate random array values              
